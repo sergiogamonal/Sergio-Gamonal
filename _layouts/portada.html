@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign t = site.data.textos[page.lang] %}{% assign c = site.data.textos.contacto %}
+<div class="portada">
+  <div>
+    <h1>{{ t.nombre }}</h1>
+    <p class="cargo">{{ page.cargo }}</p>
+    <div class="texto">
+      {{ content }}
+    </div>
+  </div>
+  <aside class="accesos">
+    <h2>{{ t.publicaciones }}</h2>
+    <ul>
+      {% for cat in t.categorias %}
+      <li><a href="{{ cat.url | relative_url }}">{{ cat.titulo }}</a></li>
+      {% endfor %}
+    </ul>
+    <h2>{% if page.lang == 'es' %}Enlaces{% else %}Links{% endif %}</h2>
+    <ul>
+      <li><a href="{{ t.cv_url | relative_url }}">{{ t.cv }}</a></li>
+      <li><a href="https://orcid.org/{{ c.orcid }}">ORCID</a></li>
+      <li><a href="{{ c.academia }}">Academia.edu</a></li>
+      <li><a href="mailto:{{ c.email }}">{{ c.email }}</a></li>
+    </ul>
+  </aside>
+</div>

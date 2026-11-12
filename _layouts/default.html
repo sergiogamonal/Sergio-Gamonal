@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% assign t = site.data.textos[page.lang] %}{% assign c = site.data.textos.contacto %}
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ t.nombre }}</title>
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.nombre }} · {{ t.lema }}{% endif %}">
+  <meta name="author" content="Sergio Gamonal C.">
+  {% if page.alt %}<link rel="alternate" hreflang="{% if page.lang == 'es' %}en{% else %}es{% endif %}" href="{{ site.url }}{{ page.alt }}">{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/estilo.css' | relative_url }}">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%237a2420'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23fbf8f1' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+</head>
+<body class="{% if page.portada %}es-portada{% endif %}">
+  <a class="saltar" href="#contenido">{% if page.lang == 'es' %}Ir al contenido{% else %}Skip to content{% endif %}</a>
+
+  <header class="cabecera">
+    <div class="marco cabecera-fila">
+      <a class="marca" href="{{ t.inicio_url | relative_url }}">
+        <span class="marca-nombre">{{ t.nombre }}</span>
+        <span class="marca-lema">{{ t.lema }}</span>
+      </a>
+      <nav class="menu" aria-label="Menú">
+        <a href="{{ t.inicio_url | relative_url }}" {% if page.seccion == 'inicio' %}aria-current="page"{% endif %}>{{ t.inicio }}</a>
+        <a href="{{ t.publicaciones_url | relative_url }}" {% if page.layout == 'biblio' or page.seccion == 'publicaciones' %}aria-current="page"{% endif %}>{{ t.publicaciones }}</a>
+        <a href="{{ t.cv_url | relative_url }}" {% if page.seccion == 'cv' %}aria-current="page"{% endif %}>{{ t.cv }}</a>
+        <span class="idiomas">
+          {% if page.lang == 'es' %}
+            <strong>ES</strong> · <a href="{{ page.alt | relative_url }}" lang="en" hreflang="en">EN</a>
+          {% else %}
+            <a href="{{ page.alt | relative_url }}" lang="es" hreflang="es">ES</a> · <strong>EN</strong>
+          {% endif %}
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <div class="banda {% if page.portada %}banda-alta{% endif %}" role="img" aria-label="{% if page.lang == 'es' %}Biblioteca del autor{% else %}The author's library{% endif %}"></div>
+
+  <main id="contenido" class="marco">
+    {{ content }}
+  </main>
+
+  <footer class="pie">
+    <div class="marco pie-fila">
+      <span>© {{ site.time | date: '%Y' }} {{ t.nombre }}</span>
+      <span>
+        <a href="mailto:{{ c.email }}">{{ c.email }}</a> ·
+        <a href="https://orcid.org/{{ c.orcid }}">ORCID</a> ·
+        <a href="{{ c.academia }}">Academia.edu</a>
+      </span>
+    </div>
+  </footer>
+  <script src="{{ '/assets/web.js' | relative_url }}"></script>
+</body>
+</html>

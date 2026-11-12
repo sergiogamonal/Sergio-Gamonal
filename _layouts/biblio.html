@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign t = site.data.textos[page.lang] %}
+<div class="con-lateral">
+  <aside class="lateral">
+    <h2 class="lateral-titulo"><a href="{{ t.publicaciones_url | relative_url }}">{{ t.bibliografia }}</a></h2>
+    <ul>
+      {% for cat in t.categorias %}
+      <li><a href="{{ cat.url | relative_url }}" {% if page.url == cat.url %}aria-current="page"{% endif %}>{{ cat.titulo }}</a></li>
+      {% endfor %}
+    </ul>
+  </aside>
+
+  <article class="biblio">
+    <h1>{{ page.title }}</h1>
+    {% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
+    <div class="herramientas">
+      <input type="search" class="filtro" placeholder="{{ t.buscar }}" aria-label="{{ t.buscar }}">
+      <label class="solo"><input type="checkbox" class="solo-texto"> {{ t.solo_texto }}</label>
+    </div>
+    <nav class="decadas" aria-label="Décadas"></nav>
+    <p class="sin-resultados" hidden>{{ t.ninguno }}</p>
+    <div class="lista">
+      {{ content }}
+    </div>
+    <p class="arriba"><a href="#contenido">↑ {{ t.arriba }}</a></p>
+  </article>
+</div>

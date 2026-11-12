@@ -1,0 +1,21 @@
+title: Sergio Gamonal C.
+url: https://sergiogamonal.com
+baseurl: ""
+permalink: pretty
+markdown: kramdown
+
+# Archivos que no forman parte de la web
+exclude:
+  - GUIA-DE-EDICION.md
+  - README.md
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      lang: es
+  - scope:
+      path: "en"
+    values:
+      lang: en
