@@ -57,7 +57,7 @@ alt: /publicaciones/articulos/
 
 - “Hayek y los sindicatos: una visión crítica”, *Revista Ius et Praxis*, Vol. 23, N° 2, pp. 295-326. [Full text](https://www.scielo.cl/scielo.php?script=sci_arttext&pid=S0718-00122017000200295)
 - “El despido libre en el contrato de trabajo estadounidense”, *Revista Chilena de Derecho Privado*, N° 28, Julio de 2017, pp. 53-89. [Full text](https://www.redalyc.org/pdf/3708/370852131002.pdf)
-- “Derecho laboral, economía y pseudociencia”, *Derecho y Crítica Social* 3(1), pp. 1-44.
+- “Derecho laboral, economía y pseudociencia”, *Derecho y Crítica Social* 3(1), pp. 1-44. [PDF](/pdfs/2017-derecho-laboral-economia-y-pseudociencia.pdf)
 - “Daños Punitivos y Prácticas Antisindicales”, *Revista de Derecho, Universidad Católica del Norte*, año 24, N° 1, 2017, pp. 223-244. [Full text](https://revistaderecho.ucn.cl/index.php/revista-derecho/article/view/2974)
 - “Flexibilidad y Desigualdad en Chile: El Derecho Social en un Contexto Neoliberal”, (co-authored with Pablo Arellano), *Boletín Mexicano de Derecho Comparado*, nueva serie, año XLX, N° 149, mayo-agosto de 2017, pp. 555-579. [Full text](https://revistas.juridicas.unam.mx/index.php/derecho-comparado/article/view/11350)
 
