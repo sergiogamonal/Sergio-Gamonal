@@ -19,6 +19,7 @@ layout: default
       <input type="search" class="filtro" placeholder="{{ t.buscar }}" aria-label="{{ t.buscar }}">
       <label class="solo"><input type="checkbox" class="solo-texto"> {{ t.solo_texto }}</label>
     </div>
+    <nav class="materias" aria-label="{% if page.lang == 'es' %}Materias{% else %}Subjects{% endif %}" data-todas="{% if page.lang == 'es' %}Todas{% else %}All{% endif %}" data-titulo="{% if page.lang == 'es' %}Materias{% else %}Subjects{% endif %}" hidden></nav>
     <nav class="decadas" aria-label="Décadas"></nav>
     <p class="sin-resultados" hidden>{{ t.ninguno }}</p>
     <div class="lista">
@@ -26,4 +27,5 @@ layout: default
     </div>
     <p class="arriba"><a href="#contenido">↑ {{ t.arriba }}</a></p>
   </article>
+  <script>window.MATERIAS = {{ site.data.textos.materias | jsonify }};</script>
 </div>

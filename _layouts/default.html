@@ -26,9 +26,9 @@
         <a href="{{ t.cv_url | relative_url }}" {% if page.seccion == 'cv' %}aria-current="page"{% endif %}>{{ t.cv }}</a>
         <span class="idiomas">
           {% if page.lang == 'es' %}
-            <strong>ES</strong> · <a href="{{ page.alt | relative_url }}" lang="en" hreflang="en">EN</a>
+            <strong>ES <span class="bandera" aria-hidden="true">🇪🇸</span></strong> · <a href="{{ page.alt | relative_url }}" lang="en" hreflang="en">EN <span class="bandera" aria-hidden="true">🇬🇧</span></a>
           {% else %}
-            <a href="{{ page.alt | relative_url }}" lang="es" hreflang="es">ES</a> · <strong>EN</strong>
+            <a href="{{ page.alt | relative_url }}" lang="es" hreflang="es">ES <span class="bandera" aria-hidden="true">🇪🇸</span></a> · <strong>EN <span class="bandera" aria-hidden="true">🇬🇧</span></strong>
           {% endif %}
         </span>
       </nav>

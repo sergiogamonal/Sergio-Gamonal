@@ -62,3 +62,25 @@ contacto:
   email: "sergio.gamonal@uai.cl"
   orcid: "0000-0001-5703-1965"
   academia: "https://uai.academia.edu/SergioGamonalC"
+
+# Materias para filtrar las publicaciones.
+# En cada publicación se escriben al final entre llaves, con el nombre en español:
+#   - “Título”, *Revista*, 2020. {Derecho individual, Fundamentos}
+# Para agregar una materia nueva, copia un bloque y cambia los textos.
+materias:
+  - es: "Derecho individual"
+    en: "Individual labour law"
+  - es: "Derecho colectivo"
+    en: "Collective labour law"
+  - es: "Fundamentos"
+    en: "Foundations"
+  - es: "Derechos fundamentales"
+    en: "Fundamental rights"
+  - es: "Derecho procesal"
+    en: "Labour procedure"
+  - es: "Igualdad y no discriminación"
+    en: "Equality and non-discrimination"
+  - es: "Constitución y trabajo"
+    en: "Constitution and labour"
+  - es: "Derecho comparado e internacional"
+    en: "Comparative and international labour law"
