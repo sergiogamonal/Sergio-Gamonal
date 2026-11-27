@@ -7,6 +7,7 @@ alt: /en/publications/articles/
 
 ## 2026
 
+- “Michael Walzer, filosofía política, y una teoría de la justicia para el derecho del trabajo”, *Revista Chilena de Derecho & Ciencia Política*, Vol. 17, Nº 1, pp. 1-25. [Texto completo](https://derechoycienciapolitica.uct.cl/index.php/RDCP/es/article/view/1813) {Fundamentos}
 - “Robert Owen, utopian socialism and labour law”, *Economic and Industrial Democracy*, Vol. 47, Nº 3, pp. 825-844. {Fundamentos}
 - “Certeza, reglas y estándares en el contrato de trabajo”, *Revista Pro Jure*, Vol. 65, pp. 33-53. [Texto completo](https://www.projurepucv.cl/index.php/rderecho/article/view/1519) {Derecho individual}
 - “La Huelga en Chile”, *Noticia Cielo Laboral*, Nº 1, 2026, online, pp. 1-5. [Texto completo](https://www.cielolaboral.com/wp-content/uploads/2026/01/gamonal_noticias_cielo_n1_2026.pdf) {Derecho colectivo}
