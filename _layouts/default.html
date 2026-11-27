@@ -8,7 +8,7 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.nombre }} · {{ t.lema }}{% endif %}">
   <meta name="author" content="Sergio Gamonal C.">
   {% if page.alt %}<link rel="alternate" hreflang="{% if page.lang == 'es' %}en{% else %}es{% endif %}" href="{{ site.url }}{{ page.alt }}">{% endif %}
-  <link rel="stylesheet" href="{{ '/assets/estilo.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/estilo.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%237a2420'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23fbf8f1' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
 </head>
 <body class="{% if page.portada %}es-portada{% endif %}">
