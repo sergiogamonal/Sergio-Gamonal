@@ -57,6 +57,7 @@ h2 { font-weight: normal; }
 .intro { color: var(--gris); font-size: 1.02rem; max-width: 46em; }
 .texto { max-width: 42em; }
 .texto p { margin: 0 0 1.05em; }
+.portada .texto p { text-align: justify; hyphens: auto; -webkit-hyphens: auto; }
 
 /* ===== Portada ===== */
 .portada { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 56px; align-items: start; }
